@@ -172,7 +172,7 @@
                         <div class="bg-white rounded-2xl shadow-2xl p-6 relative z-10 transform transition-transform duration-500 border border-gray-100 rotate-0 hover:rotate-1 lg:rotate-1 lg:hover:rotate-0">
                             
                             <div class="relative mb-4">
-                                <img src="assets/images/hero.jpeg" alt="Profesional de la salud" class="rounded-xl w-full h-56 object-cover">
+                                <img src="assets/images/centro-medico-jm-dsc02993.webp" alt="Profesional de la salud" class="rounded-xl w-full h-56 object-cover">
                                 
                                 <div class="absolute bottom-3 right-3 bg-white/95 backdrop-blur-sm p-3 rounded-lg shadow-lg border border-gray-100 max-w-[160px] hover:scale-105 transition-transform duration-300">
                                     <div class="flex items-center gap-1 mb-1 text-yellow-400">
@@ -258,7 +258,7 @@
                         <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-light mt-0.5 flex-shrink-0"></i> Solicitud de exámenes</li>
                     </ul>
                     <div class="mt-8 pt-6 border-t border-gray-100">
-                        <button onclick="window.open('https://ff.healthatom.io/Pr0tm7', '_blank')" class="text-brand-light font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                        <button onclick="window.open('https://ff.healthatom.io/IcCony', '_blank')" class="text-brand-light font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
                             Consultar ahora <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </button>
                     </div>
@@ -276,7 +276,7 @@
                         <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-light mt-0.5 flex-shrink-0"></i> Apoyo TEA y TDAH</li>
                     </ul>
                     <div class="mt-8 pt-6 border-t border-gray-100">
-                        <button onclick="window.open('https://ff.healthatom.io/Pr0tm7', '_blank')" class="text-brand-light font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                        <button onclick="window.open('https://ff.healthatom.io/acOqsW', '_blank')" class="text-brand-light font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
                             Consultar ahora <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </button>
                     </div>
@@ -312,7 +312,7 @@
                         <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-light mt-0.5 flex-shrink-0"></i> Trastornos TEA/CEA</li>
                     </ul>
                     <div class="mt-8 pt-6 border-t border-gray-100">
-                        <button onclick="window.open('https://ff.healthatom.io/Pr0tm7', '_blank')" class="text-brand-light font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                        <button onclick="window.open('https://ff.healthatom.io/rNoyKy', '_blank')" class="text-brand-light font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
                             Consultar ahora <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </button>
                     </div>
@@ -325,8 +325,23 @@
     <section id="nosotros" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="reveal">
-                    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Equipo Médico" class="rounded-2xl shadow-2xl hover:scale-[1.02] transition-transform duration-500">
+                <div class="reveal relative w-full max-w-lg mx-auto h-[500px] rounded-2xl shadow-2xl overflow-hidden group">
+                    
+                    <div id="carouselTrack" class="flex h-full transition-transform duration-700 ease-out will-change-transform">
+                        </div>
+
+                    <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 backdrop-blur-md hover:bg-white/90 text-white hover:text-brand-dark p-3 rounded-full transition-all duration-300 opacity-0 group-hover:opacity-100 shadow-lg border border-white/20 z-10">
+                        <i data-lucide="chevron-left" class="w-6 h-6"></i>
+                    </button>
+
+                    <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 backdrop-blur-md hover:bg-white/90 text-white hover:text-brand-dark p-3 rounded-full transition-all duration-300 opacity-0 group-hover:opacity-100 shadow-lg border border-white/20 z-10">
+                        <i data-lucide="chevron-right" class="w-6 h-6"></i>
+                    </button>
+
+                    <div id="carouselDots" class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+                        </div>
+
+                    <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/50 to-transparent pointer-events-none"></div>
                 </div>
                 <div class="reveal delay-200">
                     <h3 class="text-3xl font-bold text-slate-900 mb-6">¿Por qué las familias de La Florida nos eligen?</h3>
@@ -376,6 +391,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-center text-3xl font-bold text-slate-900 mb-12 reveal">Lo que dicen nuestros pacientes</h2>
             <div class="grid md:grid-cols-3 gap-8">
+                
                 <div class="bg-slate-50 p-8 rounded-2xl relative reveal hover:-translate-y-1 transition-transform duration-300">
                     <span class="text-brand-light absolute top-6 right-8 text-6xl opacity-20 font-serif">"</span>
                     <div class="flex text-yellow-400 mb-4 gap-1">
@@ -385,15 +401,16 @@
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                     </div>
-                    <p class="text-slate-700 italic mb-6">"Me encanta que pueda ver mis temas dentales y traer a mi hijo al pediatra en el mismo lugar. La atención es muy cariñosa."</p>
+                    <p class="text-slate-700 italic mb-6">"Excelente atención. La psicóloga me hizo sentir cómoda desde el primer momento y me ayudó a entender cosas que me tenían muy agobiada. Muy profesional y cercana."</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center font-bold text-gray-600">M</div>
+                        <div class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center font-bold text-gray-600">P</div>
                         <div>
-                            <p class="font-bold text-sm text-slate-900">María González</p>
-                            <p class="text-xs text-slate-500">Mamá de 2 hijos</p>
+                            <p class="font-bold text-sm text-slate-900">Paciente</p>
+                            <p class="text-xs text-slate-500">Psicología</p>
                         </div>
                     </div>
                 </div>
+
                  <div class="bg-slate-50 p-8 rounded-2xl relative reveal delay-100 hover:-translate-y-1 transition-transform duration-300">
                     <span class="text-brand-light absolute top-6 right-8 text-6xl opacity-20 font-serif">"</span>
                     <div class="flex text-yellow-400 mb-4 gap-1">
@@ -403,15 +420,16 @@
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                     </div>
-                    <p class="text-slate-700 italic mb-6">"La psicóloga me ha ayudado mucho con mi ansiedad laboral. El ambiente del centro te da mucha paz desde que entras."</p>
+                    <p class="text-slate-700 italic mb-6">"Muy buena experiencia. La odontóloga fue cuidadosa, explicó todo con claridad y el procedimiento no me dolió nada. Se nota la dedicación y el profesionalismo. La recomiendo."</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center font-bold text-gray-600">J</div>
+                        <div class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center font-bold text-gray-600">P</div>
                         <div>
-                            <p class="font-bold text-slate-900">Javier Soto</p>
-                            <p class="text-xs text-slate-500">Profesional joven</p>
+                            <p class="font-bold text-slate-900">Paciente</p>
+                            <p class="text-xs text-slate-500">Odontología</p>
                         </div>
                     </div>
                 </div>
+
                  <div class="bg-slate-50 p-8 rounded-2xl relative reveal delay-200 hover:-translate-y-1 transition-transform duration-300">
                     <span class="text-brand-light absolute top-6 right-8 text-6xl opacity-20 font-serif">"</span>
                     <div class="flex text-yellow-400 mb-4 gap-1">
@@ -421,15 +439,16 @@
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                     </div>
-                    <p class="text-slate-700 italic mb-6">"Necesitaba una urgencia dental y me atendieron rapidísimo. Precios justos y excelente mano del doctor."</p>
+                    <p class="text-slate-700 italic mb-6">"La doctora fue muy atenta y dedicada. Me revisó con calma y respondió todas mis dudas. Me senti escuchada y bien cuidada. Excelente atención."</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center font-bold text-gray-600">R</div>
+                        <div class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center font-bold text-gray-600">P</div>
                         <div>
-                            <p class="font-bold text-slate-900">Roberto Díaz</p>
-                            <p class="text-xs text-slate-500">Vecino de La Florida</p>
+                            <p class="font-bold text-slate-900">Paciente</p>
+                            <p class="text-xs text-slate-500">Medicina General</p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -451,7 +470,7 @@
         <i data-lucide="arrow-up" class="w-6 h-6"></i>
     </button>
 
-    <a href="https://wa.me/5698239415" target="_blank" class="fixed bottom-6 right-6 z-50 group">
+    <a href="https://wa.me/56982394157" target="_blank" class="fixed bottom-6 right-6 z-50 group">
         <div class="absolute bottom-full right-0 mb-3 w-48 bg-white text-slate-700 text-sm font-medium px-4 py-2 rounded-xl shadow-xl border border-gray-100 hidden group-hover:block transition-all animate-float">
             ¿Necesitas ayuda? Consúltanos aquí
             <div class="absolute top-full right-6 -mt-2 border-8 border-transparent border-t-white"></div>
@@ -491,7 +510,7 @@
                         </li>
                         <li class="flex items-center justify-center md:justify-start gap-3">
                             <i data-lucide="phone" class="text-brand-dark w-5 h-5 shrink-0"></i>
-                            <span class="text-sm">+56 9 8239 415</span>
+                            <span class="text-sm">+56 9 8239 4157</span>
                         </li>
                         <li class="flex items-center justify-center md:justify-start gap-3">
                             <i data-lucide="mail" class="text-brand-dark w-5 h-5 shrink-0"></i>
@@ -511,7 +530,7 @@
                     <h4 class="text-slate-900 font-bold text-lg mb-6 text-center md:text-left">Ubicación</h4>
                     <div class="rounded-lg overflow-hidden shadow-lg border border-gray-400 h-60 hover:shadow-xl transition-shadow">
                         <iframe 
-                            src="http://googleusercontent.com/maps.google.com/maps?q=Calle+Federico+segundo+Toro+Ponce+5408,+La+Florida,+La+Serena&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            src="https://maps.google.com/maps?q=Calle+Federico+segundo+Toro+Ponce+5408%2C+La+Florida%2C+La+Serena&t=&z=15&ie=UTF8&iwloc=&output=embed" 
                             width="600" 
                             height="450" 
                             style="border:0;" 
@@ -521,10 +540,10 @@
                             class="w-full h-full object-cover"
                         ></iframe>
                     </div>
-                    <div class="text-center md:text-left">
-                        <button class="mt-4 text-brand-dark text-sm font-bold hover:text-slate-900 transition-colors flex items-center gap-1 mx-auto md:mx-0">
-                            Ver en Google Maps <i data-lucide="external-link" class="w-4 h-4"></i>
-                        </button>
+                        <div class="text-center md:text-left">
+                         <button onclick="window.open('https://www.google.com/maps/search/?api=1&query=Calle+Federico+segundo+Toro+Ponce+5408,+La+Florida,+La+Serena', '_blank')" class="mt-4 text-brand-dark text-sm font-bold hover:text-slate-900 transition-colors flex items-center gap-1 mx-auto md:mx-0">
+                        Ver en Google Maps <i data-lucide="external-link" class="w-4 h-4"></i>
+                     </button>
                     </div>
                 </div>
 
@@ -582,6 +601,102 @@
         window.addEventListener("scroll", reveal);
         // Disparar una vez al cargar para elementos visibles
         reveal();
+    </script>
+
+    <script>
+        // Configuración del Carrusel
+        const carouselImages = [
+            "centro-medico-jm-dsc02879.webp",
+            "centro-medico-jm-dsc02906.webp",
+            "centro-medico-jm-dsc02929.webp",
+            "centro-medico-jm-dsc02930.webp",
+            "centro-medico-jm-dsc02961.webp",
+            "centro-medico-jm-dsc02964.webp",
+            "centro-medico-jm-dsc02987.webp",
+            "centro-medico-jm-dsc02989.webp",
+            "centro-medico-jm-dsc02990.webp",
+            "centro-medico-jm-dsc02991.webp",
+            "centro-medico-jm-dsc02993.webp",
+            "centro-medico-jm-dsc02998.webp",
+            "centro-medico-jm-dsc03007.webp",
+            "centro-medico-jm-dsc03013.webp",
+            "centro-medico-jm-dsc03025.webp",
+            "centro-medico-jm-dsc03029.webp",
+            "centro-medico-jm-dsc029061.webp"
+        ];
+    
+        let currentIndex = 0;
+        const track = document.getElementById('carouselTrack');
+        const dotsContainer = document.getElementById('carouselDots');
+        let autoPlayInterval;
+    
+        // 1. Inicializar Carrusel
+        function initCarousel() {
+            // Crear las imágenes
+            carouselImages.forEach((imgName, index) => {
+                // Slide
+                const slide = document.createElement('div');
+                slide.className = "w-full h-full flex-shrink-0";
+                
+                const img = document.createElement('img');
+                img.src = `assets/images/${imgName}`;
+                img.alt = `Instalaciones Centro Médico J&M - Foto ${index + 1}`;
+                img.className = "w-full h-full object-cover";
+                
+                slide.appendChild(img);
+                track.appendChild(slide);
+    
+                // Dot (Indicador)
+                const dot = document.createElement('button');
+                dot.className = `w-2.5 h-2.5 rounded-full transition-all duration-300 ${index === 0 ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white/80'}`;
+                dot.onclick = () => goToSlide(index);
+                dotsContainer.appendChild(dot);
+            });
+    
+            startAutoPlay();
+        }
+    
+        // 2. Funciones de Navegación
+        function updateCarousel() {
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            
+            // Actualizar puntos
+            const dots = dotsContainer.children;
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = `w-2.5 h-2.5 rounded-full transition-all duration-300 ${i === currentIndex ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white/80'}`;
+            }
+        }
+    
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % carouselImages.length;
+            updateCarousel();
+            resetAutoPlay();
+        }
+    
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + carouselImages.length) % carouselImages.length;
+            updateCarousel();
+            resetAutoPlay();
+        }
+    
+        function goToSlide(index) {
+            currentIndex = index;
+            updateCarousel();
+            resetAutoPlay();
+        }
+    
+        // 3. Auto Play (Cambia cada 4 segundos)
+        function startAutoPlay() {
+            autoPlayInterval = setInterval(nextSlide, 4000);
+        }
+    
+        function resetAutoPlay() {
+            clearInterval(autoPlayInterval);
+            startAutoPlay();
+        }
+    
+        // Iniciar al cargar la página
+        document.addEventListener('DOMContentLoaded', initCarousel);
     </script>
 
 </body>
